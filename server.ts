@@ -1,6 +1,5 @@
-import {MongoClient} from "mongodb";
-import bodyParser = require("body-parser");
-import express = require("express");
+import bodyParser from "body-parser";
+import express from "express";
 
 const app = express();
 const port = 8000;
