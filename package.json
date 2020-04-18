@@ -5,9 +5,7 @@
   "main": "server.ts",
   "author": "DazzlingFame",
   "scripts": {
-    "client": "cd client && yarn start",
-    "server": "nodemon server.ts",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "server": "nodemon server.ts"
   },
   "dependencies": {
 
