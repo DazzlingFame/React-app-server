@@ -21,9 +21,7 @@ app.get('/api/getTodos', (req, res) => {
 });
 
 app.post('/api/setTodos', (req, res) => {
-   const clientTodos: Array<TodoType> = req.body.param.todosArray;
-   todos = clientTodos;
-   console.log(clientTodos);
+    todos = req.body.param.todosArray;
    res.send({todos: todos});
 });
 
