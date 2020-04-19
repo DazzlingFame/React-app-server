@@ -7,10 +7,7 @@ import {TodoType} from "./types";
 const app = express();
 const port = 8000;
 
-let todos: Array<TodoType> = [
-    {id: 1, text: 'note 1', checked: false},
-    {id: 2, text: 'note 2', checked: false},
-];
+let todos: Array<TodoType> = [];
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
